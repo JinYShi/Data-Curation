@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT response (data)>
+<!ELEMENT data (row)+>
+<!ELEMENT row (agency,headline,subheadline?,publish_date,publish_year,city,state,content?,footer_content,category_tags?,contact1?,contact2?,contact3?,contact4?,date_entered?,entered_by?,date_last_modified?,last_modified_by?,category_tag1?,category_tag2?,category_tag3?,category_tag4?,category_tag5?,content2?,content3?,content4?)>
+<!ATTLIST row _id CDATA #REQUIRED>
+<!ATTLIST row _uuid CDATA #REQUIRED>
+<!ATTLIST row _position CDATA #REQUIRED>
+<!ATTLIST row _address CDATA #REQUIRED>
+<!ELEMENT agency (#PCDATA)>
+<!ELEMENT subheadline ANY>
+<!ELEMENT headline (#PCDATA)>
+<!ELEMENT category_tags ANY>
+<!ELEMENT category_tag1 ANY>
+<!ELEMENT category_tag2 ANY>
+<!ELEMENT category_tag3 ANY>
+<!ELEMENT category_tag4 ANY>
+<!ELEMENT category_tag5 ANY>
+<!ELEMENT content2 ANY>
+<!ELEMENT content3 ANY>
+<!ELEMENT content4 ANY>
+<!ELEMENT publish_date (#PCDATA)>
+<!ELEMENT publish_year (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT content ANY>
+<!ELEMENT footer_content (#PCDATA)>
+<!ELEMENT contact1 ANY>
+<!ELEMENT contact2 ANY>
+<!ELEMENT contact3 ANY>
+<!ELEMENT contact4 ANY>
+<!ELEMENT date_entered ANY>
+<!ELEMENT entered_by ANY>
+<!ELEMENT date_last_modified ANY>
+<!ELEMENT last_modified_by ANY>
+
+
